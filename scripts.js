@@ -27,9 +27,12 @@
 
 // console.log(`Final Result: ${result}`);
 
-//Exersize 3 - Pattern Matching ---------------------------------------------------------------------
+//Exersize 4 - Pattern Matching 
+// let patternMatch = /[a - z][0-9][s ! # $ % & ' * + - / = ? ^ _ ` { | } ~] .*[^.]$ *[^.]^ .(?!.*.)/i
 
-//Exersize 4
+// console.log(patternMatch.test('testemail1@hotmail.com'))
+
+//Exersize 5
 // function myValues() {
 //     let fname = document.getElementById("form1").childNodes[1].value;
 //     let lname = document.getElementById("form1").childNodes[4].value;
@@ -39,7 +42,7 @@
 
 // myValues();
 
-//Exersize 5
+//Exersize 6
 // function removecolor() {
 //     let selectBox = document.getElementById("colorSelect");
 //     let color = selectBox.value;
@@ -102,14 +105,72 @@
 // getFullMonth(new Date("10/11/2009"));
 
 //Exersize 9
-function isWeekend(x) {
-    if (x.getDay() == 6 || x.getDay() == 0) {
-        console.log("Weekend")
-    } else {
-        console.log("Weekday");
-    }
-}
+// function isWeekend(x) {
+//     if (x.getDay() == 6 || x.getDay() == 0) {
+//         console.log("Weekend")
+//     } else {
+//         console.log("Weekday");
+//     }
+// }
 
-isWeekend(new Date('Nov 15, 2014'));
-isWeekend(new Date('Nov 16, 2014'));
-isWeekend(new Date('Nov 17, 2014'));
+// isWeekend(new Date('Nov 15, 2014'));
+// isWeekend(new Date('Nov 16, 2014'));
+// isWeekend(new Date('Nov 17, 2014'));
+
+//Exersize 10
+// var library = [{
+//         author: 'Bill Gates',
+//         title: 'The Road Ahead',
+//         readingStatus: true
+//     },
+//     {
+//         author: 'Steve Jobs',
+//         title: 'Walter Isaacson',
+//         readingStatus: true
+//     },
+//     {
+//         author: 'Suzanne Collins',
+//         title: 'Mockingjay: The Final Book of The Hunger Games',
+//         readingStatus: false
+//     }
+// ];
+
+// library.forEach(item => console.log(`Book Name: ${item.title} - Author: ${item.author} - Reading Status: ${item.readingStatus}`))
+
+//Exersize 11
+// setInterval(function() { var today = new Date();
+//     console.log(today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + "\n"); }, 1000);
+
+//Exersize 12
+// var library = [{
+//         title: 'The Road Ahead',
+//         author: 'Bill Gates',
+//         libraryID: 1254
+//     },
+//     {
+//         title: 'Walter Isaacson',
+//         author: 'Steve Jobs',
+//         libraryID: 4264
+//     },
+//     {
+//         title: 'Mockingjay: The Final Book of The Hunger Games',
+//         author: 'Suzanne Collins',
+//         libraryID: 3245
+//     }
+// ];
+
+// function compare(a, b) {
+//     if (a.libraryID < b.libraryID) {
+//         return -1;
+//     }
+//     if (a.title > b.title) {
+//         return 1;
+//     }
+//     if (a.author > b.author) {
+//         return 1;
+//     }
+//     return 0;
+// }
+
+// library.sort(compare);
+// console.log(library);
